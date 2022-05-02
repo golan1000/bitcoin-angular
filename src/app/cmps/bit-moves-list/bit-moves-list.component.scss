@@ -1,0 +1,30 @@
+.move-list-main-con {
+  width: 100%;
+  background-color: var(--app-bgcolor);
+}
+
+.move-list-con {
+  border: 1px solid black;
+  padding: 5px;
+  width: 400px;
+  background-color: yellow;
+  margin: 0 auto;
+  .move-list-details {
+    width: 100%;
+    background-color: green;
+
+    text-align: left;
+    font-size: 18px;
+    .move-con {
+      display: flex;
+      border-bottom: 1px solid black;
+      padding: 3px;
+      //   background-color: brown;
+      .info-img-con {
+        margin-right: 10px;
+        width: 20px;
+        height: auto;
+      }
+    }
+  }
+}

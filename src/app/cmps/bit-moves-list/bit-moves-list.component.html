@@ -1,0 +1,14 @@
+<section *ngIf="moves.length" class="move-list-main-con">
+    <div class="move-list-con">
+        <label>Move List</label>
+        <button (click)="onClose()">X</button>
+        <div class="move-list-details">
+            <div *ngFor="let move of moves" class="move-con">
+                <div class="info-img-con">
+                    <img src="../../../assets/imgs/info.png" />
+                </div>
+                <label>{{move.data}}</label>
+            </div>
+        </div>
+    </div>
+</section>

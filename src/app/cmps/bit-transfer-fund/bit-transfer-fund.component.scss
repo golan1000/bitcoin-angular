@@ -1,0 +1,30 @@
+@import "../../../styles.scss";
+.transfer-main-con {
+  width: 100%;
+  background-color: var(--app-bgcolor);
+}
+
+.transfer-con {
+  * {
+    padding: 5px;
+  }
+  margin: 0 auto;
+  background-color: yellow;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  button {
+    @include button1-style;
+  }
+  input {
+    @include input-style;
+  }
+  .transfer-con-title {
+    font-size: 24px;
+  }
+  .transfer-con-amount {
+    text-align: left;
+  }
+  .transfer-con-btn {
+  }
+}

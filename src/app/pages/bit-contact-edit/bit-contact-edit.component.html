@@ -1,0 +1,21 @@
+<section class="edit-main-con">
+
+    <div class="edit-con">
+        EDIT!
+        <div class="edit-field-con">
+            <label class="field-title">Name:</label>
+            <input class="field-input" type="text" [(ngModel)]="contact.name" />
+        </div>
+        <div class="edit-field-con">
+            <label class="field-title">Phone:</label>
+            <input class="field-input" type="text" [(ngModel)]="contact.phone" />
+        </div>
+        <div class="edit-field-con">
+            <label class="field-title">Email:</label>
+            <input class="field-input" type="text" [(ngModel)]="contact.email" />
+        </div>
+        <button (click)="onSave()">Save</button>
+        <button (click)="onBack()">Cancel</button>
+    </div>
+    <!-- {{contact|json}} -->
+</section>

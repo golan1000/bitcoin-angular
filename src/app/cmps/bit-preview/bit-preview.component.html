@@ -1,0 +1,23 @@
+<section class="preview-main-con btn" (mouseenter)="removeBtnShown=true" (mouseleave)="removeBtnShown=false">
+    <a [routerLink]="['../details/',contactData._id]" class="navlink">
+        <div class="preview-con">
+            <div class="preview-name">
+                {{contactData.name}}
+            </div>
+            <div class="preview-pic-con">
+                <img [src]="contactData.picture" />
+            </div>
+
+            <div class="preview-edit-remove-con">
+                <!-- *ngIf="removeBtnShown" -->
+
+                <div class="preview-remove-btn">
+                    <div (click)="emitSelected()"><img src="../../../assets/imgs/remove.png" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </a>
+    <!-- {{contactData|json}} -->
+</section>
